@@ -4,7 +4,7 @@ const express = require('express');
 import {container} from "./IcoConfig";
 const bodyParser = require('body-parser');
 const port = 3000;
-
+import cors from 'cors';
 import * as dotenv from 'dotenv';
 
 dotenv.config()
@@ -15,6 +15,7 @@ server.setConfig((app) => {
   app.use(express.json());
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
+  app.use(cors());
 
 })
 
