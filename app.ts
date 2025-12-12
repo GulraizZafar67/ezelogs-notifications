@@ -8,6 +8,9 @@ import cors from 'cors';
 import * as dotenv from 'dotenv'; 
 
 
+
+
+
 dotenv.config()
 
 const server = new InversifyExpressServer(container)
