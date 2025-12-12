@@ -5,7 +5,8 @@ import {container} from "./IcoConfig";
 const bodyParser = require('body-parser');
 const port = 3000;
 import cors from 'cors';
-import * as dotenv from 'dotenv';
+import * as dotenv from 'dotenv'; 
+
 
 dotenv.config()
 
