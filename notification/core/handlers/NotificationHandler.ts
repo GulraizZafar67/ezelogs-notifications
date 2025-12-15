@@ -40,7 +40,7 @@ export class NotificationHandler {
 
         } catch (err) {
             console.error("Error sending notification:", err);
-            return {success: false, message: `Error sending notification`};
+            return {success: false, message: `Error sending notification ${err}`};
         }
     }
 }
