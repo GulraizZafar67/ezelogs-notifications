@@ -21,7 +21,7 @@ server.setConfig((app) => {
   app.use(bodyParser.json());
   app.use(
   cors({
-    origin: 'http://localhost:3030',
+    origin: ['http://localhost:3030', 'https://dev.ezelogs.com'],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, // only if you use cookies / auth
