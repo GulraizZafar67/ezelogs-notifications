@@ -4,7 +4,7 @@ const express = require('express');
 import {container} from "./IcoConfig";
 const bodyParser = require('body-parser');
 const port = 3000;
-import cors from 'cors';
+const cors = require('cors');
 import * as dotenv from 'dotenv'; 
 
 
