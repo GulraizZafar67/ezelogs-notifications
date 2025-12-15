@@ -19,7 +19,14 @@ server.setConfig((app) => {
   app.use(express.json());
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
-  app.options('*', cors());
+  app.use(
+  cors({
+    origin: 'http://localhost:3030',
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, // only if you use cookies / auth
+  })
+);
 
 
 })
